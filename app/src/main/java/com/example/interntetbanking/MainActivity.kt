@@ -1,11 +1,8 @@
 package com.example.interntetbanking
 
-import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
-import android.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -30,6 +27,8 @@ class MainActivity : AppCompatActivity() {
                 val intent = Intent(this,Operacoes::class.java)
                 intent.putExtra("SALDO",saldo)
                 intent.putExtra("CONTA",nconta )
+                intent.putExtra("NOME",cliente.nome)
+                intent.putExtra("SOBRENOME", cliente.sobrenome)
 
 
 
